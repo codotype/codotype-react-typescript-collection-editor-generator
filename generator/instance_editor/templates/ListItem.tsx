@@ -27,6 +27,7 @@ export function <%= schema.class_name %>ListItem(props: <%= schema.class_name %>
               props.onEditButtonClick(props.<%= schema.identifier %>);
             }}
           >
+            <i className="fa fa-fw fa-pencil" />
             Edit
           </button>
           <button
