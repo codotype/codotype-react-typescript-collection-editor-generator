@@ -1,0 +1,12 @@
+{
+  "name": "@codotype/react-ts-instance-editor-generator",
+  "version": "0.1.0",
+  "description": "No description yet",
+  "main": "index.js",
+  "author": "Alexander Schwartzberg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codotype/codotype-vuejs-simple-generator/issues"
+  },
+  "homepage": "https://github.com/codotype/codotype-vuejs-simple-generator#readme"
+}

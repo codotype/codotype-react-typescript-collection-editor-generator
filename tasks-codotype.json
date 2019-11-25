@@ -1,0 +1,98 @@
+{
+  "label": "Tasks",
+  "identifier": "tasks",
+  "schemas": [
+    {
+      "id": "USER_SCHEMA_ID",
+      "order": 5,
+      "label": "User",
+      "label_plural": "Users",
+      "identifier": "user",
+      "identifier_plural": "users",
+      "class_name": "User",
+      "class_name_plural": "Users",
+      "attributes": [
+        {
+          "id": "USER_EMAIL_ATTRIBUTE",
+          "order": 1,
+          "label": "E-Mail",
+          "identifier": "email",
+          "help": "The E-Mail address associated with this User",
+          "required": true,
+          "unique": true,
+          "datatype": "STRING",
+          "default_value": "",
+          "datatypeOptions": {},
+          "locked": true
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "0.5745501011068974",
+      "order": 0,
+      "locked": false,
+      "source": "USER",
+      "label": "Credit Card",
+      "label_plural": "Credit Cards",
+      "identifier": "credit_card",
+      "identifier_plural": "credit_cards",
+      "camel_case": "creditCard",
+      "camel_case_plural": "creditCards",
+      "class_name": "CreditCard",
+      "class_name_plural": "CreditCards",
+      "attributes": [
+        {
+          "id": "0.8328064127283386",
+          "order": 0,
+          "label": "Number",
+          "identifier": "number",
+          "help": "Describe the Task",
+          "required": true,
+          "unique": false,
+          "datatype": "STRING",
+          "default_value": null,
+          "datatypeOptions": {}
+        },
+        {
+          "id": "0.83280999127283386",
+          "order": 0,
+          "label": "Exp",
+          "identifier": "Exp",
+          "help": "Describe the Task",
+          "required": true,
+          "unique": false,
+          "datatype": "STRING",
+          "default_value": null,
+          "datatypeOptions": {}
+        },
+        {
+          "id": "0.83280600004127283386",
+          "order": 0,
+          "label": "Code",
+          "identifier": "Code",
+          "help": "Describe the Task",
+          "required": true,
+          "unique": false,
+          "datatype": "STRING",
+          "default_value": null,
+          "datatypeOptions": {}
+        },
+        {
+          "id": "0.83281190127283386",
+          "order": 0,
+          "label": "Purpose",
+          "identifier": "Purpose",
+          "help": "Describe the Task",
+          "required": true,
+          "unique": false,
+          "datatype": "STRING",
+          "default_value": null,
+          "datatypeOptions": {}
+        }
+      ],
+      "relations": [],
+      "reverse_relations": []
+    }
+  ]
+}

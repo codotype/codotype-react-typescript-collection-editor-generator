@@ -1,0 +1,94 @@
+{
+  "id": "codotype-react-ts-instance-editor-generator",
+  "label": "React + TS Instance Editor",
+  "icon": "https://res.cloudinary.com/codotype/image/upload/v1551192656/tech-logos/vue.png",
+  "description": "Generate a simple React + TypeScript CRUD frontend for an array of Objects. Great for learning and prototyping.",
+  "tech_tags": ["React", "TypeScript", "Next.js", "Bootstrap"],
+  "type_tags": ["Frontend"],
+  "self_configuring": false,
+  "project_path": "react_ts_instance-editor",
+  "github_url": "codotype/codotype-react-ts-instance-editor-generator",
+  "version": "0.1.0",
+  "official": true,
+  "experience": "Beginner",
+  "defaultSchemas": [
+    {
+      "id": "0.26006061859298235",
+      "order": 0,
+      "locked": false,
+      "removable": true,
+      "source": "GENERATOR",
+      "label": "Task",
+      "label_plural": "Tasks",
+      "identifier": "task",
+      "identifier_plural": "tasks",
+      "class_name": "Task",
+      "class_name_plural": "Tasks",
+      "attributes": [
+        {
+          "id": "0.9044443077054265",
+          "order": 0,
+          "label": "Label",
+          "identifier": "label",
+          "help": "",
+          "required": true,
+          "unique": false,
+          "datatype": "STRING",
+          "default_value": null,
+          "datatypeOptions": {}
+        },
+        {
+          "id": "0.7416137572159311",
+          "order": 2,
+          "label": "Done",
+          "identifier": "done",
+          "help": "",
+          "required": false,
+          "unique": false,
+          "datatype": "BOOLEAN",
+          "default_value": null,
+          "datatypeOptions": {}
+        }
+      ],
+      "relations": [],
+      "reverse_relations": [],
+      "camel_case": "task",
+      "camel_case_plural": "tasks"
+    }
+  ],
+  "defaultConfiguration": {},
+  "supportedDatatypes": [
+    "STRING",
+    "TEXT",
+    "INTEGER",
+    "BOOLEAN"
+  ],
+  "supportedRelations": [
+    "HAS_ONE"
+  ],
+  "configuration_groups": [
+    {
+      "id": "deployment-group",
+      "label": "Deployment",
+      "identifier": "deployment",
+      "description": "Configure the deployment options for your app",
+      "type": "CONFIGURATION_GROUP_TYPE_OPTION",
+      "scope": "CONFIGURATION_GROUP_SCOPE_GLOBAL",
+      "more_info_url": null,
+      "attributes": [
+        {
+          "label": "Wrap in Next.js Example App",
+          "identifier": "includeNextJs",
+          "type": "BOOLEAN",
+          "help": "Generate a small <code>Next.js</code> app containing the editors",
+          "icon": {
+            "type": "ICON_TYPE_URL",
+            "value": "https://res.cloudinary.com/codotype/image/upload/f_png/v1552186408/tech-logos/netlify.svg"
+          },
+          "default_value": false,
+          "more_info_url": "https://nextjs.com/"
+        }
+      ]
+    }
+  ]
+}
